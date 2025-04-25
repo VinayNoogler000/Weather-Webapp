@@ -16,7 +16,7 @@ A simple and responsive weather web application that provides real-time weather 
 
 ## 🎥 Preview
 
-[![Weather Webapp](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/assets/Preview.png?raw=true)](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/assets/preview.png)
+[![Weather WebApp](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/assets/preview.png?raw=true)](/)
 
 
 ## 🛠 Technologies Used
