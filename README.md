@@ -1,6 +1,7 @@
 # Password Generator App
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/LICENSE.txt)
+[![Commercial Terms](https://img.shields.io/badge/Commercial_Terms-blue.svg)](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/COMMERCIAL-TERMS.md)
 [![GitHub issues](https://img.shields.io/github/issues/VinayNoogler000/Password-Generator)](https://github.com/VinayNoogler000/Weather-Webapp/issues)
 [![GitHub stars](https://img.shields.io/github/stars/VinayNoogler000/Password-Generator)](https://github.com/VinayNoogler000/Weather-Webapp/stargazers)
 [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/src/index.html)
@@ -10,12 +11,12 @@
 
 ## 📖 Overview
 
-
+A simple and responsive weather web application that provides real-time weather information for any location. The app uses the OpenWeatherMap API to fetch weather data and displays it in a user-friendly interface. The design is built using Tailwind CSS, ensuring a modern and clean look.
 
 
 ## 🎥 Preview
 
-[![Weather Webapp](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/assets/Preview.png?raw=true)](https:/)
+[![Weather Webapp](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/assets/Preview.png?raw=true)](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/assets/preview.png)
 
 
 ## 🛠 Technologies Used
@@ -101,7 +102,7 @@ Password Generator/
 ## 🐛 Found a Bug? Have a Feature Suggestion?
 
 If you find a bug, please open an issue [here](https://github.com/VinayNoogler000/Weather-Webapp/issues) with a clear description and steps to reproduce.   
-I would love to hear your feedback on this project! If you have suggestions for performance improvements or ideas for new features, please feel free to open an issue [here](https://github.com/VinayNoogler000/Weather-Webapp/issues) or [Contact me](#-contact-developer--owner), via my socials.
+I would love to hear your feedback on this project! If you have suggestions for performance improvements or ideas for new features, please feel free to open an issue [here](https://github.com/VinayNoogler000/Weather-Webapp/issues) or contact me, via my [socials](#-contact-developer--owner).
 Your feedback means a lot to me, as it helps me grow and become a more powerful Software Developer Engineer.
 
 
@@ -140,8 +141,6 @@ While building frontend web development projects, after internship, I will be al
 In between, I take out time daily, to explore about other demanding and valuable upcoming technologies (like AI-Agents using MCP Servers), even if it's for just 30 minutes, to keep myself updated with the latest trends in the tech world.
 
 At last, after Completing Frontend Development Projects, and Learning Backend Development, I'll be making at least 3-4 Major Full-Stack Projects, using MERN tech-stack, going from small-to-big, so that I can become a really commendable Full-Stack Web Developer, by connecting my Frontend and Backend skills together.
-
----
 
 *You can Checkout My Planned Career Roadmap in Software Engineering profession, [here](https://www.notion.so/vinay-tambey/Career-Roadmap-1540de180657805d87dee74657f45d4e?pvs=4).*
 
