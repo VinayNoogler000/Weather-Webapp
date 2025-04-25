@@ -1,0 +1,33 @@
+{
+  "name": "weather-webapp",
+  "version": "1.0.0",
+  "description": "A website to get realtime weather updates of different locations (cities/towns/villages)",
+  "keywords": [
+    "weather",
+    "webapp",
+    "design-by-bolt",
+    "html",
+    "css",
+    "tailwind",
+    "javascript",
+    "rest-apis",
+    "api-integration",
+    "open-weather-map",
+    "open-source"
+  ],
+  "homepage": "https://github.com/VinayNoogler000/Weather-Webapp#readme",
+  "bugs": {
+    "url": "https://github.com/VinayNoogler000/Weather-Webapp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinayNoogler000/Weather-Webapp.git"
+  },
+  "license": "ISC",
+  "author": "Vinay Tambey",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

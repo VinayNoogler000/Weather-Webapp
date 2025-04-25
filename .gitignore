@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Build artifacts
+dist/
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# Test coverage
+coverage/
+
+# VS Code settings
+.vscode/
