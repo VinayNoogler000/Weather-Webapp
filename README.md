@@ -1,4 +1,4 @@
-# Password Generator App
+# Weather Web App
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/LICENSE.txt)
 [![Commercial Terms](https://img.shields.io/badge/Commercial_Terms-blue.svg)](https://github.com/VinayNoogler000/Weather-Webapp/blob/main/COMMERCIAL-TERMS.md)
