@@ -37,7 +37,8 @@ A simple and responsive weather web application that provides real-time weather 
 
 Throughout the development of Weather Webapp, several key learnings and insights were gained:
 
-1. 
+1. Different sizes of favicon are required, so that the browser can use the appropriate size according to the devices, and if multiple sizes are not used, then the browser may need to adjust the size of the image automatically, decreasing the quality of the image. The sizes are 16x16, 32x32, 48x48, and 64x64 pixels.
+2. ImageMagick can be used to convert and merge multiple types of images (like .png) into a single image (like .ico) file, which is used as a favicon for the webapp. 
 
 These learnings contributed significantly to the robustness and user experience of the Weather Webapp, as well as to my Software Development concepts.
 
