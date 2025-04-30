@@ -11,7 +11,7 @@
 
 ## 📖 Overview
 
-A simple and responsive weather web application that provides real-time weather information for any location. The app uses the OpenWeatherMap API to fetch weather data and displays it in a user-friendly interface. The design is built using Tailwind CSS, ensuring a modern and clean look.
+A simple and responsive weather web application that provides real-time weather information for any location. The app uses the OpenWeatherMap API to fetch weather data and displays it in a user-friendly interface. The design is created using [Bolt](#-acknowledgments) and built using [Tailwind CSS](#-acknowledgments), ensuring a modern and clean look.
 
 
 ## 🎥 Preview
