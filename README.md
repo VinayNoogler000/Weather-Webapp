@@ -21,6 +21,7 @@ A simple and responsive weather web application that provides real-time weather 
 
 ## 🛠 Technologies Used
 
+- **Bolt**: An AI Agent to create responsive and beautiful UI/UX design of this webapp.
 - **HTML5**: Provides the structure and content of the web page.
 - **Tailwind CSS**: A utility-first CSS framework for styling the application.
 - **JavaScript**: Adds interactivity and functionality to the web application.
