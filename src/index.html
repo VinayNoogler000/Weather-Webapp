@@ -13,30 +13,41 @@
         <script src="./app.js" defer></script>
     </head>
 
-    <body>
-       
-        <header>
-            <h1 class="text-3xl font-bold flex gap-2">
-                <img src="/assets/logo.svg" alt="SkyScope Logo">
-                SkyScope
-            </h1>
-        </header>
+    <body class="bg-gradient-to-br from-blue-400 via-blue-500 to-purple-600">
+        <!-- rainy-weather-gradient: bg-gradient-to-br from-gray-600 via-blue-700 to-blue-900 
+            cloudy-weaather-gradient: bg-gradient-to-br from-blue-400 via-blue-500 to-purple-600-->
 
-        <main>
-            <div>Search Bar</div>
-            <div>Basic Weather Info</div>
-            <div>More Weather Info</div>
-            <div>5-Days Forecast</div>
-        </main>
+        <!-- Content Container -->
+        <div class="max-w-4xl min-h-screen m-auto p-8 flex flex-col items-center gap-8">
+            <header class="bg-white/10 backdrop-blur-x px-6 py-3 rounded-full flex items-center gap-2 transition ease-in-out duration-250 hover:bg-white/20">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                    class="w-8 h-8 text-yellow-300 animate-floating">
+                    <path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"/>
+                </svg>
 
-        <footer>
-            <p>
-                Weather data provided by 
-                <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">
-                    OpenWeatherMap
-                </a>
-            </p>
-        </footer>
+                <h1 class="text-2xl text-white font-bold tracking-wide">
+                    SkyScope
+                </h1>
+            </header>
+    
+            <main>
+                <div>Search Bar</div>
+                <div>Basic Weather Info</div>
+                <div>More Weather Info</div>
+                <div>5-Days Forecast</div>
+            </main>
+    
+            <footer>
+                <p>
+                    Weather data provided by 
+                    <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">
+                        OpenWeatherMap
+                    </a>
+                </p>
+            </footer>
+        </div>
 
     </body>
 </html>
