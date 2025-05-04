@@ -2,6 +2,10 @@
 
 @theme {
     --animate-floating: floating 2s ease-in-out infinite;
+    --color-alpha1: rgba(255, 255, 255, 0.2);
+    --color-alpha2: rgba(255, 255, 255, 0.1);
+    --shadow-search-container: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --color-search-bar: rgba(255, 255, 255, 0.18);
 
     @keyframes floating {
         0%,
@@ -12,4 +16,40 @@
           transform: translateY(-25%);
         }
     }
+}
+
+@layer components {
+  .search-container {
+    @apply min-w-full backdrop-blur-md bg-linear-to-r from-alpha1 to-alpha2 border border-solid border-search-bar rounded-2xl p-4 shadow-search-container;
+  }
+
+  .search-form {
+    @apply min-w-full flex items-center gap-2;
+  }
+
+  .search-bar{
+    @apply w-full flex gap-2 relative;
+  }
+
+  .search-icon {
+    @apply absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-text z-10;
+  }
+
+  #search-input {
+    @apply min-w-full bg-white/90 px-4 py-3 pr-10 rounded-xl placeholder-gray-400 shadow-lg smooth-transition;
+  }
+
+  #search-btn {
+    @apply bg-blue-600 px-6 py-3 rounded-xl text-white shadow-lg cursor-pointer smooth-transition hover:bg-blue-700 hover:shadow-xl hover:scale-105 ;
+  }
+
+  #search-input, #search-btn {
+    @apply focus:outline-none focus:ring-3 focus:ring-blue-500 focus:scale-101 focus:shadow-xl;
+  }
+}
+
+@utility smooth-transition {
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
