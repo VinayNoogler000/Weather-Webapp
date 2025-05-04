@@ -32,10 +32,22 @@
                 </h1>
             </header>
     
-            <main>
-                <div>Search Bar</div>
+            <main class="w-full flex flex-col gap-6">
+                <div class="search-container">
+                    <form method="get" action="" class="search-form">
+                        <div class="search-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                            <input type="text" placeholder="Enter city name..." name="location" id="search-input" required>
+                        </div>
+
+                        <button type="submit" id="search-btn">Search</button>
+                    </form>
+                </div>
+
                 <div>Basic Weather Info</div>
+
                 <div>More Weather Info</div>
+
                 <div>5-Days Forecast</div>
             </main>
     
