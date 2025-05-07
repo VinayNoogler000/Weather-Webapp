@@ -28,7 +28,8 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "twcss-build": "npx @tailwindcss/cli -i ./src/style.css -o ./dist/style.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.5",
