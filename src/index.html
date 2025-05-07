@@ -44,11 +44,40 @@
                     </form>
                 </div>
 
-                <div>Basic Weather Info</div>
+                <div class="weather-cards">
+                    <div class="weather-card">
+                        <div class="location-and-time">
+                            <h2 class="location">London, UK</h2>
+                            <h4 class="timing">Wed, May 7, 8:22 PM</h4>
+                        </div>
 
-                <div>More Weather Info</div>
+                        <div class="temperature-container">
+                            <!-- weather icon SVG --> Icon
+                            <span class="temperature">22&deg;C</span>
+                        </div>
 
-                <div>5-Days Forecast</div>
+                        <div class="min-max-temps">
+                            <div class="max-temp-container">
+                                <!-- upward-arrow icon SVG --> &uarr;
+                                <p>High: <span class="max-temp">24&deg;C</span></p>
+                            </div>
+
+                            <div class="min-temp-container">
+                                <!-- downward-arrow icon SVG --> &darr;
+                                <p>Low: <span class="min-temp">24&deg;C</span></p>
+                            </div>
+                        </div>
+
+                        <div class="temperature-unit-toggle">
+                            <button>&deg;C</button>
+                            <button>&deg;F</button>
+                        </div>
+                    </div>
+                
+                    <div class="weather-card ">Weather Details</div>
+                    
+                    <div class="weather-card max-w-full basis-full">5-Days Forecast</div>
+                </div>
             </main>
     
             <footer>

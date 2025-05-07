@@ -46,6 +46,14 @@
   #search-input, #search-btn {
     @apply focus:outline-none focus:ring-3 focus:ring-blue-500 focus:scale-101 focus:shadow-xl;
   }
+
+  .weather-cards {
+    @apply min-w-full max-w-full flex flex-wrap gap-4 justify-between;
+  }
+
+  .weather-card {
+    @apply max-w-1/2 p-6 rounded-2xl basis-[47.5%] shrink backdrop-blur-md bg-linear-to-r from-alpha1 to-alpha2;
+  }
 }
 
 @utility smooth-transition {
