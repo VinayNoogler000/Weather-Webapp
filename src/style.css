@@ -2,6 +2,7 @@
 
 @theme {
     --animate-floating: floating 2s ease-in-out infinite;
+    --shadow-weather-card: 0 12px 40px rgba(0, 0, 0, 0.15);
 
     @keyframes floating {
         0%,
@@ -43,12 +44,24 @@
     @apply focus:outline-none focus:ring-3 focus:ring-blue-500 focus:scale-101 focus:shadow-xl;
   }
 
-  .weather-cards {
-    @apply min-w-full max-w-full flex flex-wrap gap-4 justify-between;
+  .weather-cards-container {
+    @apply min-w-full max-w-full flex flex-wrap gap-4 justify-between ;
   }
 
   .weather-card {
-    @apply max-w-1/2 p-6 rounded-2xl basis-[47.5%] shrink glass-morphism smooth-transition hover:shadow-xl;
+    @apply max-w-1/2 p-6 text-white rounded-2xl basis-[48.5%] shrink glass-morphism smooth-transition hover:translate-y-[-1px] hover:shadow-weather-card;
+  }
+
+  .main-weather-card {
+    @apply flex flex-col gap-6;
+  }
+
+  .main-weather-card .temp-toggle-btn {
+    @apply px-3 py-1.5 rounded-lg text-sm font-medium smooth-transition scale-105 cursor-pointer text-white/70 hover:text-white hover:scale-105;
+  }
+
+  .temp-toggle-btn.active {
+    @apply bg-white/30 text-white;
   }
 }
 

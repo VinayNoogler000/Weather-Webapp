@@ -44,33 +44,40 @@
                     </form>
                 </div>
 
-                <div class="weather-cards">
-                    <div class="weather-card">
-                        <div class="location-and-time">
-                            <h2 class="location">London, UK</h2>
-                            <h4 class="timing">Wed, May 7, 8:22 PM</h4>
+                <div class="weather-cards-container">
+                    <div class="weather-card main-weather-card">
+
+                        <div class="flex justify-between items-start">
+                            <div class="location-and-time">
+                                <h2 class="location text-3xl font-bold mb-1 smooth-transition hover:text-blue-200">London, UK</h2>
+                                <h4 class="timing text-lg opacity-90">Wed, May 7, 8:22 PM</h4>
+                            </div>
+
+                            <div class="temperature-unit-toggle flex items-center gap-2 bg-white/20 rounded-xl p-1 shadow-lg">
+                                <button class="temp-toggle-btn temp-in-celsius active">&deg;C</button>
+                                <button class="temp-toggle-btn temp-in-fahrenheit ">&deg;F</button>
+                            </div>
                         </div>
 
-                        <div class="temperature-container">
-                            <!-- weather icon SVG --> Icon
-                            <span class="temperature">22&deg;C</span>
+                        <div class="temperature-container flex items-center gap-4 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon w-20 h-20 smooth-transition group-hover:rotate-15 group-hover:scale-110"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                            
+                            <div class="text-content flex flex-col">
+                                <span class="temperature text-6xl font-bold smooth-transition hover:text-blue-200">22&deg;C</span>
+                                <p class="weather-type text-xl">Cloudy</p>
+                            </div>
                         </div>
 
-                        <div class="min-max-temps">
-                            <div class="max-temp-container">
-                                <!-- upward-arrow icon SVG --> &uarr;
+                        <div class="min-max-temps grid grid-cols-2 gap-4">
+                            <div class="max-temp-container flex items-center gap-2 smooth-transition hover:translate-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-300"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
                                 <p>High: <span class="max-temp">24&deg;C</span></p>
                             </div>
 
-                            <div class="min-temp-container">
-                                <!-- downward-arrow icon SVG --> &darr;
+                            <div class="min-temp-container flex items-center gap-2 smooth-transition hover:translate-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-300"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
                                 <p>Low: <span class="min-temp">24&deg;C</span></p>
                             </div>
-                        </div>
-
-                        <div class="temperature-unit-toggle">
-                            <button>&deg;C</button>
-                            <button>&deg;F</button>
                         </div>
                     </div>
                 
