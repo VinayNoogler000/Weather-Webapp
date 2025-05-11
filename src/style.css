@@ -2,10 +2,6 @@
 
 @theme {
     --animate-floating: floating 2s ease-in-out infinite;
-    --color-alpha1: rgba(255, 255, 255, 0.2);
-    --color-alpha2: rgba(255, 255, 255, 0.1);
-    --shadow-search-container: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    --color-search-bar: rgba(255, 255, 255, 0.18);
 
     @keyframes floating {
         0%,
@@ -20,7 +16,7 @@
 
 @layer components {
   .search-container {
-    @apply min-w-full backdrop-blur-md bg-linear-to-r from-alpha1 to-alpha2 border border-solid border-search-bar rounded-2xl p-4 shadow-search-container;
+    @apply min-w-full rounded-2xl p-4 glass-morphism; 
   }
 
   .search-form {
@@ -52,12 +48,19 @@
   }
 
   .weather-card {
-    @apply max-w-1/2 p-6 rounded-2xl basis-[47.5%] shrink backdrop-blur-md bg-linear-to-r from-alpha1 to-alpha2;
+    @apply max-w-1/2 p-6 rounded-2xl basis-[47.5%] shrink glass-morphism smooth-transition hover:shadow-xl;
   }
+}
+
+@utility glass-morphism {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); 
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
 
 @utility smooth-transition {
   transition-property: all;
-  transition-duration: 200ms;
+  transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
