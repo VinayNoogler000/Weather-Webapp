@@ -92,8 +92,62 @@
                             </div>
                         </div>
                     </div>
-                
-                    <div class="weather-card ">Weather Details</div>
+                    
+                    <div class="weather-card"> <!-- Weather-Details Card -->
+                        <h3 class="text-2xl font-bold mb-6">Weather Details</h3>
+
+                        <div class="grid gap-6">
+                            <!-- Wind-Speed Container -->
+                            <div class="flex justify-between items-center smooth-transition hover:scale-105">
+                                <div class="flex items-center gap-3 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse-slow text-blue-300"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></svg>
+                                    <p>Wind Speed</p>
+                                </div>
+
+                                <span class="wind-speed font-semibold">8 km/h</span>
+                            </div>
+
+                            <!-- Visibility Container -->
+                            <div class="flex justify-between items-center smooth-transition hover:scale-105">
+                                <div class="flex items-center gap-3 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse-slow text-blue-300"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+                                    <p>Visibility</p>
+                                </div>
+
+                                <span class="visibility font-semibold">10 km</span>
+                            </div>
+
+                            <!-- Pressure Container -->
+                            <div class="flex justify-between items-center smooth-transition hover:scale-105">
+                                <div class="flex items-center gap-3 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse-slow text-blue-300"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                                    <p>Pressure</p>
+                                </div>
+
+                                <span class="pressure font-semibold">1023 hPa</span>
+                            </div>
+
+                            <!-- Dew-Point Container -->
+                            <div class="flex justify-between items-center smooth-transition hover:scale-105">
+                                <div class="flex items-center gap-3 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse-slow text-blue-300"><path d="M7.2 14.8a2 2 0 0 1 2 2"/><circle cx="18.5" cy="8.5" r="3.5"/><circle cx="7.5" cy="16.5" r="5.5"/><circle cx="7.5" cy="4.5" r="2.5"/></svg>
+                                    <p>Due Point</p>
+                                </div>
+
+                                <span class="due-point font-semibold">8&deg;C</span>
+                            </div>
+
+                            <!-- UV Index Container -->
+                            <div class="flex justify-between items-center smooth-transition hover:scale-105">
+                                <div class="flex items-center gap-3 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse-slow text-blue-300"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    <p>UV Index</p>
+                                </div>
+
+                                <span class="uv-index font-semibold">6</span>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="weather-card max-w-full basis-full">5-Days Forecast</div>
                 </div>
