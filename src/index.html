@@ -18,7 +18,7 @@
             cloudy-weaather-gradient: bg-gradient-to-br from-blue-400 via-blue-500 to-purple-600-->
 
         <!-- Content Container -->
-        <div class="max-w-4xl min-h-screen m-auto p-8 flex flex-col items-center gap-8">
+        <div class="max-w-4xl mx-auto flex flex-col items-center gap-8">
             <header class="flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm smooth-transition hover:bg-white/20">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" 
@@ -32,7 +32,7 @@
                 </h1>
             </header>
     
-            <main class="w-full flex flex-col gap-6">
+            <main class="w-full flex flex-col gap-8">
                 <div class="search-container">
                     <form method="get" action="" class="search-form">
                         <div class="search-bar">
@@ -68,15 +68,27 @@
                             </div>
                         </div>
 
-                        <div class="min-max-temps grid grid-cols-2 gap-4">
-                            <div class="max-temp-container flex items-center gap-2 smooth-transition hover:translate-x-2">
+                        <div class="min-max-temps ">
+                            <div class="metrics-container">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-300"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
                                 <p>High: <span class="max-temp">24&deg;C</span></p>
                             </div>
 
-                            <div class="min-temp-container flex items-center gap-2 smooth-transition hover:translate-x-2">
+                            <div class="metrics-container">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-300"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
                                 <p>Low: <span class="min-temp">24&deg;C</span></p>
+                            </div>
+                        </div>
+
+                        <div class="more-metrics -mt-2 pt-4 border-t border-white/20">
+                            <div class="metrics-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-300"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></svg>
+                                <p>Feels like: <span class="feels-like">12&deg;C</span></p>
+                            </div>
+
+                            <div class="metrics-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-300"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg>
+                                <p>Humidity: <span class="min-temp">69%</span></p>
                             </div>
                         </div>
                     </div>

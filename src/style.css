@@ -53,7 +53,7 @@
   }
 
   .main-weather-card {
-    @apply flex flex-col gap-8;
+    @apply flex flex-col gap-6;
   }
 
   .main-weather-card .temp-toggle-btn {
@@ -62,6 +62,14 @@
 
   .temp-toggle-btn.active {
     @apply bg-white/30 text-white;
+  }
+
+  .main-weather-card .min-max-temps, .main-weather-card .more-metrics {
+    @apply grid grid-cols-2 gap-4;
+  }
+
+  .main-weather-card .metrics-container {
+    @apply flex items-center gap-2 smooth-transition hover:translate-x-2;
   }
 }
 
