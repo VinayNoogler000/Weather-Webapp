@@ -102,6 +102,10 @@
   .day-forecast .temp-container {
     @apply flex flex-col items-center;
   }
+
+  .footer-links {
+    @apply font-semibold rounded smooth-transition hover:text-blue-200 focus-visible:ring-blue-300;
+  }
 }
 
 @utility glass-morphism {
