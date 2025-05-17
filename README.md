@@ -44,7 +44,14 @@ Throughout the development of Weather Webapp, several key learnings and insights
 4. **Lucide Icons** provides a collection of free and open-source icons that can be used in web applications. It is a great alternative to Font Awesome, as it is lightweight and customizable.
 5. **Adding background gradient from top left to bottom left or any other direction** by using Vanilla CSS and Tailwind's Utility Classes.
 6. **Using `@theme` directve in Tailwind-CSS to define custom design tokens, which directly maps with Tailwind's Utility Classes**, allowing us/devs to easily apply styling by using custom variables.
-7. **Adding Copyright Notice** in the footer element of the website, to legally own/hold all the rights. A copyright notice consists of 4 parts: Copyright word or © symbol, year of creation of the product (or any other thing), name of the invidiual or business, and the rights you hold -generally, "All Rights Reserved".   
+7. **Adding Copyright Notice** in the footer element of the website, to legally own/hold all the rights. A copyright notice consists of 4 parts: Copyright word or © symbol, year of creation of the product (or any other thing), name of the invidiual or business, and the rights you hold -generally, "All Rights Reserved".
+8. **Meta Tags**: Various meta tags can be used to improve SEO and user experience.
+   - Meta Robots Tag: Controls how search engines index and follow your page.
+   For eg: `<meta name="robots" content="index, follow" />`
+   - Meta Theme-Color: Sets the browser toolbar color on mobile devices. For eg: `<meta name="theme-color" content="#000000" />`
+   - Meta Open Graph Tags: Improve how your site appears when shared on social media. For eg: `<meta property="og:title" content="Weather Webapp" />`
+   - Meta Twitter Card Tags: Enhance Twitter sharing. For eg: `<meta name="twitter:card" content="summary_large_image" />`
+   - Link Canonical Tag: Prevents duplicate content issues by specifying the preferred URL. For eg: `<link rel="canonical" href="https://example.com/" />`
 
 These learnings contributed significantly to the robustness and user experience of the Weather Webapp, as well as to my Software Development concepts.
 
