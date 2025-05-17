@@ -55,8 +55,8 @@
     @apply bg-blue-600 px-6 py-3 rounded-xl text-white shadow-lg cursor-pointer smooth-transition hover:bg-blue-700 hover:shadow-xl hover:scale-105 ;
   }
 
-  #search-input, #search-btn {
-    @apply focus:outline-none focus:ring-3 focus:ring-blue-500 focus:scale-101 focus:shadow-xl;
+  #search-input, #search-btn, .temp-toggle-btn, footer a {
+    @apply focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-blue-500 focus-visible:scale-101 focus-visible:shadow-xl;
   }
 
   .weather-cards-container {
