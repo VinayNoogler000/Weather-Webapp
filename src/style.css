@@ -86,6 +86,22 @@
   .main-weather-card .metrics-container {
     @apply flex items-center gap-2 smooth-transition hover:translate-x-2;
   }
+
+  .day-forecast {
+    @apply flex flex-col items-center gap-2.5 p-4 rounded-xl smooth-transition bg-white/10 hover:bg-white/20 hover:scale-105;
+  }
+
+  .day-forecast .day-text {
+    @apply font-medium;
+  }
+
+  .day-forecast .weather-icon {
+    @apply w-[2.5rem] h-auto animate-floating;
+  }
+
+  .day-forecast .temp-container {
+    @apply flex flex-col items-center;
+  }
 }
 
 @utility glass-morphism {
