@@ -53,7 +53,7 @@
   }
 
   .main-weather-card {
-    @apply flex flex-col gap-6;
+    @apply flex flex-col gap-8;
   }
 
   .main-weather-card .temp-toggle-btn {
