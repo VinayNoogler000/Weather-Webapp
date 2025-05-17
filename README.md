@@ -43,7 +43,8 @@ Throughout the development of Weather Webapp, several key learnings and insights
 3. **Using `rel="noopener noreferrer"` attributes of anchor `<a>` tags** are important for security & privacy reasons, especially when using `target="_blank"` to open links in a new tab, as these attributes prevent the new page from accessing the original page's `window` object by using `window.opener`, and also prevent the referrer (or original page) information from being sent to the new page, respectively.
 4. **Lucide Icons** provides a collection of free and open-source icons that can be used in web applications. It is a great alternative to Font Awesome, as it is lightweight and customizable.
 5. **Adding background gradient from top left to bottom left or any other direction** by using Vanilla CSS and Tailwind's Utility Classes.
-6. **Using `@theme` directve in Tailwind-CSS to define custom design tokens, which directly maps with Tailwind's Utility Classes**, allowing us/devs to easily apply styling by using custom variables.   
+6. **Using `@theme` directve in Tailwind-CSS to define custom design tokens, which directly maps with Tailwind's Utility Classes**, allowing us/devs to easily apply styling by using custom variables.
+7. **Adding Copyright Notice** in the footer element of the website, to legally own/hold all the rights. A copyright notice consists of 4 parts: Copyright word or © symbol, year of creation of the product (or any other thing), name of the invidiual or business, and the rights you hold -generally, "All Rights Reserved".   
 
 These learnings contributed significantly to the robustness and user experience of the Weather Webapp, as well as to my Software Development concepts.
 
