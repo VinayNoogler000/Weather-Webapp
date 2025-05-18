@@ -1,4 +1,4 @@
-const API_KEY = "fb909bb33c68a62650d566b60fc8b778"; //Open-Weather-Map API Key 
+const API_KEY = config.API_KEY; //Open-Weather-Map API Key 
 
 // Select the required DOM elements:
 const tempCelsiusBtn = document.querySelector('.temp-in-celsius');
