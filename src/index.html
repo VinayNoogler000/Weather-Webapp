@@ -38,12 +38,10 @@
     </head>
 
     <body class="min-h-screen p-4 md:p-8 smooth-transition duration-700 bg-gradient-to-br from-blue-400 via-blue-500 to-purple-600">
-        <!-- rainy-weather-gradient: bg-gradient-to-br from-gray-600 via-blue-700 to-blue-900 
-            cloudy-weaather-gradient: bg-gradient-to-br from-blue-400 via-blue-500 to-purple-600-->
 
         <!-- Content Container -->
         <div class="max-w-4xl mx-auto flex flex-col items-center gap-8">
-            <header class="flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm smooth-transition hover:bg-white/20">
+            <header class="flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm smooth-transition hover:bg-white/20 cursor-default">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" 
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
@@ -174,17 +172,19 @@
                     </div>
                     
                     <!-- 5-Days Forecast Card -->
-                    <div class="weather-card min-w-full basis-full mt-2">
+                    <div class="weather-card max-w-md md:min-w-full basis-full md:mt-2">
                         <h3 class="text-2xl font-bold mb-6">5-Day Forecast</h3>
 
-                        <div class="grid grid-cols-5 gap-4">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
                             <div class="day-forecast day-1">
-                                <span class="day-text">Sat</span>
+                                <div class="flex gap-4 md:flex-col items-center md:gap-2.5">
+                                    <span class="day-text">Sat</span>
 
-                                <div class="weather-icon-container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    <div class="weather-icon-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    </div>
                                 </div>
-
+                        
                                 <div class="temp-container">
                                     <span class="max-temp font-bold">19&deg;C</span>
                                     <span class="min-temp opacity-90 text-sm">18&deg;C</span>
@@ -192,10 +192,12 @@
                             </div>
 
                             <div class="day-forecast day-2">
-                                <span class="day-text">Sun</span>
-
-                                <div class="weather-icon-container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                <div class="flex gap-4 md:flex-col items-center md:gap-2.5">
+                                    <span class="day-text">Sun</span>
+                                    
+                                    <div class="weather-icon-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    </div>
                                 </div>
 
                                 <div class="temp-container">
@@ -205,10 +207,12 @@
                             </div>
 
                             <div class="day-forecast day-3">
-                                <span class="day-text">Mon</span>
-
-                                <div class="weather-icon-container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                <div class="flex gap-4 md:flex-col items-center md:gap-2.5">
+                                    <span class="day-text">Mon</span>
+                                    
+                                    <div class="weather-icon-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    </div>
                                 </div>
 
                                 <div class="temp-container">
@@ -218,10 +222,12 @@
                             </div>
 
                             <div class="day-forecast day-4">
-                                <span class="day-text">Tue</span>
+                                <div class="flex gap-4 md:flex-col items-center md:gap-2.5">
+                                    <span class="day-text">Tue</span>
 
-                                <div class="weather-icon-container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    <div class="weather-icon-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    </div>
                                 </div>
 
                                 <div class="temp-container">
@@ -230,11 +236,13 @@
                                 </div>
                             </div>
 
-                            <div class="day-forecast day-5">
-                                <span class="day-text">Wed</span>
-
-                                <div class="weather-icon-container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                            <div class="day-forecast day-5 ">
+                                <div class="flex gap-4 md:flex-col items-center md:gap-2.5">
+                                    <span class="day-text">Wed</span>
+                                    
+                                    <div class="weather-icon-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    </div>
                                 </div>
 
                                 <div class="temp-container">
@@ -247,24 +255,28 @@
                 </div>
             </main>
     
-            <footer class="text-center">
+            <footer class="text-center mt-2 md:mt-0">
                 <p class="text-white text-sm mb-1">
                     Copyright &copy; 2025 <a href="https://www.linkedin.com/in/vinaytambey/" rel="noopener noreferrer" class="footer-links">Vinay Tambey</a>. All rights reserved.
                 </p>
 
-                <p class="text-white text-sm mb-1">
-                    Explore the Codebase on
-                    <a href="https://github.com/VinayNoogler000/Weather-Webapp" target="_blank" rel="noopener noreferrer" class="footer-links">
-                        GitHub!
-                    </a>
+                <div class="text-white text-sm flex flex-col md:flex-row gap-1">
+                    <div>
+                        Explore the Codebase on
+                        <a href="https://github.com/VinayNoogler000/Weather-Webapp" target="_blank" rel="noopener noreferrer" class="footer-links">
+                            GitHub!
+                        </a>
+                    </div>
 
-                    &nbsp;|&nbsp;
+                    <span class="hidden md:inline">&nbsp;|&nbsp;</span>
                     
-                    Weather data provided by 
-                    <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer" class="footer-links">
-                        OpenWeatherMap
-                    </a>
-                </p>
+                    <div>
+                        Weather data provided by 
+                        <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer" class="footer-links">
+                            OpenWeatherMap
+                        </a>
+                    </div>
+                </div>
             </footer>
         </div>
 
