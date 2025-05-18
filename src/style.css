@@ -60,7 +60,7 @@
   }
 
   .weather-cards-container {
-    @apply min-w-full max-w-full flex flex-wrap gap-4 justify-between ;
+    @apply min-w-full max-w-full -mt-2 flex flex-wrap gap-4 justify-between ;
   }
 
   .weather-card {
