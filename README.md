@@ -52,6 +52,10 @@ Throughout the development of Weather Webapp, several key learnings and insights
    - Meta Open Graph Tags: Improve how your site appears when shared on social media. For eg: `<meta property="og:title" content="Weather Webapp" />`
    - Meta Twitter Card Tags: Enhance Twitter sharing. For eg: `<meta name="twitter:card" content="summary_large_image" />`
    - Link Canonical Tag: Prevents duplicate content issues by specifying the preferred URL. For eg: `<link rel="canonical" href="https://example.com/" />`
+9. **Different types of `<script> tags`** can be used to load JavaScript files in a web page. For eg:
+   - `text/javascript`: The default type for JavaScript files, in which the browser doesn't support import/export statements, but the Node.js runtime does support them, by interepreting the code as CommonJS modules. And, commonJS modules are loaded synchronously, which means that the code is executed in the order it is written.
+   - `module`: It's used to make the JS run-time environment (browser or node.js) interpret JS files as ES6 modules, which support import/export statements. And, ES6 modules are loaded asynchronously, which means that the code is executed in parallel with the rest of the page.
+   - `Other Types`: There are other types of `<script>` tags, like `text/babel`, `text/typescript`, etc., which are used to load files written in other languages, like Babel and TypeScript, respectively. And, older (uncommon) types like `application/javascript`, `text/ecmascript`, `application/ecmascript`, etc., are also used to load JS files, but they are not recommended to be used, as they are not widely supported by modern browsers.
 
 These learnings contributed significantly to the robustness and user experience of the Weather Webapp, as well as to my Software Development concepts.
 
