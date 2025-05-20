@@ -1,3 +1,5 @@
+import { config } from "../config.js";
+const URL = config.API_ENDPOINT; //Open-Weather-Map API URL
 const API_KEY = config.API_KEY; //Open-Weather-Map API Key 
 
 // Select the required DOM elements:
@@ -22,7 +24,7 @@ function toggleTemperatureUnits(tempUnitBtn) {
 // Function to get the geo co-ordinates (latitudes & longitudes) of a named location:
 async function getGeoCoordinates(location) {
     try {
-        const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${API_KEY}`);
+        const response = await fetch(URL + `q=${location}&limit=1&appid=${API_KEY}`);
         const data = await response.json();
         return data[0];
     }
