@@ -1,5 +1,5 @@
 import { config } from "../config.js";
-const URL = config.API_ENDPOINT; //Open-Weather-Map API URL
+const API_URL = config.API_ENDPOINT; //Open-Weather-Map API URL
 const API_KEY = config.API_KEY; //Open-Weather-Map API Key 
 
 // Select the required DOM elements:
@@ -7,7 +7,6 @@ const tempCelsiusBtn = document.querySelector('.temp-in-celsius');
 const tempFahrenheitBtn = document.querySelector(".temp-in-fahrenheit");
 const searchForm = document.querySelector(".search-form");
 const searchInputEl = document.querySelector("#search-input");
-const searchBtn = document.querySelector("#search-btn");
 
 // Function to toggle temperature units:
 function toggleTemperatureUnits(tempUnitBtn) {
@@ -23,6 +22,7 @@ function toggleTemperatureUnits(tempUnitBtn) {
 
 // Function to get the geo co-ordinates (latitudes & longitudes) of a named location:
 async function getGeoCoordinates(location) {
+    const URL = "https://api.openweathermap.org/geo/1.0/direct?"; //GeoCoder API's Endpoint of Open-Weather-Map
     try {
         const response = await fetch(URL + `q=${location}&limit=1&appid=${API_KEY}`);
         const data = await response.json();
